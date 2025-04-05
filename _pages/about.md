@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Qarma team / LIS / Université Aix-Marseille / CNRS
+subtitle: Ph.D. in Computer Science<
 
 profile:
   align: right
@@ -10,8 +10,10 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Ph.D. in Computer Science</p>
+    <p>Qarma, LIS, amU, CNRS</p>
     <p>Marseille</p>
     <p>France</p>
+    
 
 news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
