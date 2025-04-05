@@ -8,7 +8,7 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
+  more_info:
     <p>Ph.D. in Computer Science</p>
     <p>Qarma, LIS, amU, CNRS</p>
     <p>Marseille</p>
