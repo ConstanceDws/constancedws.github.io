@@ -2,9 +2,15 @@
   type: map
   contents:
     - name: Full Name
-      value: Constance Douwes  
-    - name: Date of Birth
-      value: 11th January 1996
+      value: Constance Douwes
+    - name: Email
+      value: constance.douwes@inria.fr
+    - name: Phone
+      value: +33 6 64 77 96 71
+    - name: GitHub
+      value: https://github.com/ConstanceDws
+    - name: LinkedIn
+      value: https://linkedin.com/in/constance-douwes
     - name: Languages
       value: French, English, German
 
@@ -12,31 +18,69 @@
   type: time_table
   contents:
     - title: PhD in Computer Science
-      institution: Sorbonne Universtiy, IRCAM, CNRS
-      year: 2023
+      institution: Sorbonne University, IRCAM, CNRS, STMS UMR9912
+      year: 2019 - 2023
+      description: "Thesis: The environmental impact of deep generative models for audio."
     - title: Master 2 ATIAM
-      institution: IRCAM, Télécom Paris, Sorbonne Universsity
-      year: 2019
+      institution: IRCAM, Sorbonne University, Télécom Paris
+      year: 2018 - 2019
     - title: Engineering degree
       institution: École Nationale Supérieure de l’Électronique et de ses Applications (ENSEA)
-      year: 2018 
+      year: 2015 - 2018
+    - title: Classe préparatoire aux grandes écoles
+      institution: Lycée Saint-Louis, Paris
+      year: 2013 - 2015
+    - title: Baccalauréat
+      institution: Lycée Saint-Charles, Athis-Mons
+      year: 2013
 
 - title: Experience
   type: time_table
   contents:
     - title: Postdoctoral Researcher
-      institution: INRIA Nancy, Université de Lorraine, LORIA, CNRS
+      institution: INRIA Nancy, Université de Lorraine, CNRS, LORIA UMR7503
       year: 2023 - 2025
-
+      description: |
+        Supervisor: Romain Serizel
+        - Research on energy footprint analysis of deep learning systems.
+        - Developed methods for energy estimation and normalization.
     - title: PhD Candidate
-      institution: Sorbonne Universtiy, IRCAM, CNRS
-      year: 2019-2023
-
+      institution: IRCAM, Sorbonne University, CNRS
+      year: 2019 - 2023
+      description: |
+        Supervisors: Jean-Pierre Briot, Philippe Esling
+        - Studied environmental impact of deep generative audio models.
+        - Developed Pareto-optimal methodology for evaluating cost/quality trade-offs.
     - title: M2 Internship
-      institution: IRCAM
+      institution: IRCAM, Sorbonne University
       year: 2019
+      description: |
+        Supervisor: Philippe Esling
+        - Hierarchical variational learning for musical audio synthesis.
+
+- title: Publications
+  type: list
+  contents:
+    - "**Energy Consumption Trends in Sound Event Detection Systems** (ICASSP 2025) – Constance Douwes, Romain Serizel."
+    - "**Is quality enough? Integrating energy consumption in neural audio synthesis models** (ICASSP 2023) – Constance Douwes et al."
+    - "**Diet deep generative audio models with structured lottery** (DAFx 2020) – Philippe Esling, Constance Douwes et al."
+
+- title: Teaching
+  type: list
+  contents:
+    - "M2 Signal & Artificial Intelligence (SIA), ENSEA (2024): Environmental impact of AI (2h lecture)."
+    - "M1 Signal Musical Option, ENSEA (2024): Generative AI for sound synthesis (4h lecture)."
+    - "L1 Elements of Programming, Sorbonne University (2019-2022): Python, C (158h total)."
+    - "L2 Client-server architecture, Sorbonne University (2019-2020): HTML, RegEx, HTTP (39h)."
+
+- title: Supervision
+  type: list
+  contents:
+    - "M2 Internship Supervisor, INRIA Nancy (2024): Source separation algorithms – performance and energy consumption."
+    - "M1 Project Supervisor, IDMC Nancy (2023-2024): Environmental impact of speech processing models."
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Ultimate Frisbee, Biking, Music (DJ)
+    - "Environmental sustainability in AI."
+    - "Ultimate Frisbee, biking, music (DJ)."
