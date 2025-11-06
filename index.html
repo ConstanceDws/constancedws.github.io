@@ -8,15 +8,15 @@
         :root {
             --bg: #000000;
             --text: #cacaca;
-            --accent: #ffffff;
-            --link: #9ccfd8;
+            --accent: #f3ebac;
+            --link: #a2ccf3;
         }
 
         body {
             font-family: "Courier New", Courier, monospace;
             background-color: var(--bg);
             color: var(--text);
-            max-width: 1000px;
+            max-width: 800px;
             margin: 40px auto;
             padding: 0 20px;
             line-height: 1.8;
@@ -27,28 +27,16 @@
             margin-bottom: 2.5rem;
         }
 
-        /* Symbole solaire stylisé à la place de l'image */
-        .sun-symbol {
-            display: inline-block;
-            font-size: 5rem;
-            color: var(--accent);
-            line-height: 1;
-            margin-bottom: 0.3em;
-        }
-
-        h1, h2 {
+        h1 {
             color: var(--accent);
             font-weight: normal;
-        }
-
-        h1 {
             margin: 0.5em 0 0.2em;
             font-size: 1.8em;
         }
 
         p.subtitle {
             font-size: 0.95em;
-            color: var(--accent);
+            color: var(--text);
         }
 
         section {
@@ -56,6 +44,8 @@
         }
 
         h2 {
+            color: var(--accent);
+            font-weight: normal;
             border-bottom: 1px solid var(--accent);
             padding-bottom: 0.2em;
             margin-bottom: 0.6em;
@@ -74,39 +64,75 @@
         footer {
             text-align: center;
             font-size: 0.85em;
-            color: var(--accent);
+            color: var(--text);
             margin-top: 3rem;
         }
+        
+        .photo-container {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: inline-block;
+        }
+
+        .profile-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+
+        .color-overlay {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--accent); /* couleur souhaitée */
+            opacity: 0.3; /* ajuste la force de la couleur */
+        }
+
+
     </style>
 </head>
 <body>
     <header>
-        <div class="sun-symbol">☼</div>
-
+        <div class="photo-container">
+        <img src="pic.jpeg" alt="Constance Douwes" class="profile-photo">
+        <div class="color-overlay"></div>
+        </div>
         <h1>Constance Douwes</h1>
-        <p class="subtitle">Associate Professor in Computer Science at Centrale Méditerranée<br>
-        Member of the QARMA team, CNRS LIS — Activist in Sustainable AI</p>
+        <p class="subtitle">
+        Associate Professor in Computer Science at Centrale Méditerranée<br>
+        Member of the QARMA team, CNRS LIS<br><br>
+        ECM/LIS,<br>
+        Bureau 506, Bât. Equerre<br>
+        38 rue F. Joliot Curie, 13013 Marseille<br>
+        +33 (0)4 91 05 43 96<br>
+        <a href="mailto:constance.douwes@lis-lab.fr">constance.douwes@lis-lab.fr</a>
+    </p>
+
     </header>
 
     <section>
         <h2>About Me</h2>
         <p>I am Associate Professor in Computer Science. My academic journey began with a Ph.D. at 
-        <a href="https://acids.ircam.fr/" target="_blank"><strong>IRCAM (STMS laboratory, ACIDS team)</strong></a>, 
+        <a href="https://acids.ircam.fr/" target="_blank">IRCAM (STMS laboratory, ACIDS team)</a>, 
         where I studied the energy consumption of neural networks applied to audio generation.</p>
 
         <p>After that, I worked as a postdoctoral researcher at 
-        <a href="https://team.inria.fr/multispeech/" target="_blank"><strong>INRIA Nancy (Multispeech team)</strong></a>, 
+        <a href="https://team.inria.fr/multispeech/" target="_blank">INRIA (LORIA, Multispeech team)</a>, 
         focusing on the environmental impacts of AI systems used for sound event detection.</p>
 
         <p>I am now a member of the 
-        <a href="https://qarma.lis-lab.fr/" target="_blank"><strong>QARMA team</strong></a> 
-        at the <strong>LIS laboratory</strong>, continuing to explore the environmental footprint of AI systems.</p>
+        <a href="https://qarma.lis-lab.fr/" target="_blank">QARMA team</a> at the LIS laboratory, continuing to explore the environmental footprint of AI systems.</p>
     </section>
 
     <section>
-        <h2>Vidéo</h2>
+        <h2>Video</h2>
         <p>
-            PhD Defense : On the Environmental Impact of Deep Generative Models for Audio  
+            PhD Defense : On the Environmental Impact of Deep Generative Models for Audio
             <a href="https://www.youtube.com/watch?v=yUAuQaN-ccQ&t=52s" target="_blank">[video]</a>  
         </p>
         <p>
@@ -118,26 +144,33 @@
 <section>
     <h2>Articles</h2>
     <p>
-        - C. Douwes, R. Serizel, "Energy Consumption Trends in Sound Event Detection Systems", 2025. [article]<br>
-        - C. Douwes, R. Serizel, "From Computation to Consumption: Exploring the Compute-Energy Link for Training and Testing Neural Networks for Sed Systems", 2024. [article]<br>
-        - S. Cornell, J. Ebbers, C. Douwes, et al., "Sound Event Detection with Heterogeneous Data and Missing Labels", 2024. [article]<br>
-        - C. Douwes, R. Serizel, "Normalizing energy consumption for hardware-independent evaluation", 2024. [article]<br>
-        - C. Douwes, "Is Quality Enough? Integrating Energy Consumption in a Large-Scale Evaluation of Neural Audio Synthesis Models", 2023. [article]<br>
-        - P. Esling, N. Devis, A. Bitton, et al., "Diet Deep Generative Audio Models with Structured Lottery", 2020. [article]
+    C. Douwes, R. Serizel, "Energy Consumption Trends in Sound Event Detection Systems", 2025. [article]<br>
+    </p>
+
+    <p> 
+    C. Douwes, R. Serizel, "From Computation to Consumption: Exploring the Compute-Energy Link for Training and Testing Neural Networks for Sed Systems", 2024. [article]<br>
+    </p>
+    
+    <p> 
+    S. Cornell, J. Ebbers, C. Douwes, et al., "Sound Event Detection with Heterogeneous Data and Missing Labels", 2024. [article]<br>
+    </p>
+    
+    <p> 
+    C. Douwes, R. Serizel, "Normalizing energy consumption for hardware-independent evaluation", 2024. [article]<br>
+    </p>
+    
+    <p> 
+    C. Douwes, "Is Quality Enough? Integrating Energy Consumption in a Large-Scale Evaluation of Neural Audio Synthesis Models", 2023. [article]<br>
+    </p>
+    
+    <p> 
+    P. Esling, N. Devis, A. Bitton, et al., "Diet Deep Generative Audio Models with Structured Lottery", 2020. [article]
     </p>
 </section>
 
 
-
-    <section>
-        <h2>Contact & Links</h2>
-        <p>Email: <a href="mailto:constance.douwes@lis-lab.fr">constance.douwes@lis-lab.fr</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/constance-douwes" target="_blank">linkedin.com/in/constance-douwes</a></p>
-        <p>Publications: <a href="https://scholar.google.com/citations?user=2hSzn1sAAAAJ" target="_blank">Google Scholar</a></p>
-    </section>
-
     <footer>
-        &copy; 2025 Constance Douwes — Low-energy web design 🌿
+        &copy; 2025 Constance Douwes — Low-energy web design
     </footer>
 </body>
 </html>
